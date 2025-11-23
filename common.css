@@ -350,3 +350,27 @@ figcaption {
 }
 
 
+/* フォームを囲む要素のスタイル（高さ制御のために min-height を指定） */
+.iframe-wrap {
+    /* フォームが表示されるまでの最小高さを確保（見た目崩れ防止） */
+    min-height: 700px;
+}
+.iframe-wrap iframe {
+    width: 100%; 
+    min-height: 700px; /* CSSで高さを担保 */
+}
+
+/* フォールバックメールの基本スタイル */
+.fallback-mail {   
+  margin-top: 12px;   
+  font-size: 0.95em;   
+  color: var(--muted); 
+  display: block;  
+  text-align: center; /* 中央に寄せるなど調整 */
+} 
+
+/* 読み込み成功時に非表示にするためのクラス */
+.fallback-mail.hidden {  
+  display: none;  
+}
+
