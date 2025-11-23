@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">  
+  
+  <!-- トップページ -->  
+  <url>  
+    <loc>https://asset-garden.pages.dev/</loc>  
+    <changefreq>weekly</changefreq>  
+    <priority>1.0</priority>  
+  </url>  
+  
+  <!-- 物語 第1話〜第9話 -->  
+  <url><loc>https://asset-garden.pages.dev/story1.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story2.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story3.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story4.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story5.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story6.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story7.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story8.html</loc></url>
+  <url><loc>https://asset-garden.pages.dev/story9.html</loc></url>    
+  
+  <!-- STEP1〜STEP6 -->  
+  <url><loc>https://asset-garden.pages.dev/step1.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/step2.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/step3.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/step4.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/step5.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/step6.html</loc></url>  
+  
+  <!-- 新規：審査必須ページ -->  
+  <url><loc>https://asset-garden.pages.dev/privacy.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/disclaimer.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/contact.html</loc></url>
+  <url><loc>https://asset-garden.pages.dev/aboutus.html</loc></url>  
+  
+</urlset>  
