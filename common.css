@@ -320,3 +320,33 @@ figcaption {
     line-height: 1.4;
 }
 
+
+/* Googleフォームの見え方 */
+.google-form-iframe {
+    /* フォームの親要素の幅に合わせて100%は維持 */
+    width: 100%;
+    
+    /* フォームの内容が少なくても、最低限この高さは確保する */
+    min-height: 700px; 
+    
+    /* フォームが長くなっても、この高さを超えたらスクロールバーを表示させる */
+    max-height: 1000px; 
+    
+    /* フォームの内容に応じて高さを自動調整させる場合は、以下のheight: auto; が必要 */
+    height: auto; 
+    
+    /* Googleフォームの特性上、高さを完全に自動調整させるのは難しいため、
+       min-heightとmax-heightで高さをコントロールするのが最も確実です。*/
+}
+
+/* Googleフォームの見え方 スマートフォンでの調整 (メディアクエリ) */
+@media (max-width: 600px) {
+    .google-form-iframe {
+        /* モバイルではフォームを長く見せたい場合 */
+        min-height: 900px; 
+        /* 最大の高さを設定しない（モバイルでスクロールさせやすくするため） */
+        max-height: none; 
+    }
+}
+
+
