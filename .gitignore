@@ -1,0 +1,18 @@
+# OSごとに出力される一時ファイル
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.stackdump
+
+# Node.js関連（フロントエンド開発の場合によく使う）
+node_modules
+/dist
+/build
+.env
+.env.local
+
+# エディタやIDEの設定・キャッシュ
+.vscode/
+.idea/
+*.swp
+*~
