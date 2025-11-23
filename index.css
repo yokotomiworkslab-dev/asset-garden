@@ -1,0 +1,388 @@
+/* ==================================== */
+/* index.css: トップページ専用スタイル */
+/* このCSSは index.html のみで読み込まれます。 */
+/* ==================================== */
+
+/* --- ヘッダー要素 (共通設定の header スタイルを拡張/上書き) --- */
+
+/* ヘッダー全体 (Flexboxのgapを共通設定より広く) */
+header.site-header {
+  display: flex;
+  align-items: center;
+  gap: 16px; 
+}
+
+/* ロゴアイコンのデザイン */
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow); /* 共通設定の影を使用 */
+}
+.logo h1 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  transform: translateY(-2px); /* わずかに上に移動して調整 */
+}
+
+/* サイトタイトル */
+.site-title {
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+/* サブタイトル */
+.site-sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* --- ヒーローセクション --- */
+.hero {
+  margin-top: 18px;
+  background: linear-gradient(180deg, #ffffff, #fffefb);
+  border-radius: var(--round);
+  padding: 26px;
+  box-shadow: var(--shadow);
+  /* 左右に分割するグリッドレイアウト */
+  display: grid;
+  grid-template-columns: 1fr 320px; 
+  gap: 20px;
+  align-items: center;
+}
+.hero .lead {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.hero .lead small {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 8px;
+}
+/* 右側のビジュアルエリア */
+.hero-visual {
+  background: linear-gradient(135deg, #fffaf6, #fff7fb);
+  border-radius: 12px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 12px;
+  color: var(--muted);
+}
+
+/* --- ボタン群 (CTA) --- */
+.cta-buttons {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+/* プライマリボタンの色 */
+.btn-primary {
+  background: var(--leaf);
+  color: #114b2b;
+}
+/* セカンダリボタンの色 */
+.btn-secondary {
+  background: #fff;
+  color: #333;
+  border: 1px solid #f0d4db;
+}
+
+
+/* --- セクション・カード --- */
+.section {
+  margin-top: 26px;
+}
+/* カード一覧のグリッドレイアウト */
+.cards {
+  display: grid;
+  /* 最小220px、最大1frで、可能な限り列を自動調整 */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+/* indexのカードは共通設定よりパディングが狭いため上書き */
+.card {
+  padding: 14px; 
+}
+.card h3 {
+  margin: 0;
+  font-size: 15px;
+}
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* --- ステップセクション --- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列グリッド */
+  gap: 12px;
+}
+.step {
+  background: linear-gradient(180deg, #fff, #f8fff8);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.small {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* --- 成長パネル (growth) --- */
+.growth {
+  display: grid;
+  grid-template-columns: 1fr 220px; /* 広い列と狭い列に分割 */
+  gap: 12px;
+  align-items: start;
+}
+.growth .panel {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.stat {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.stat .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* --- レスポンシブ設定 (768px以下でレイアウトを調整) --- */
+@media (max-width: 880px) {
+  .hero {
+    grid-template-columns: 1fr; /* 1列にする */
+    gap: 12px;
+  }
+  .growth {
+    grid-template-columns: 1fr; /* 1列にする */
+  }
+  .steps {
+    grid-template-columns: 1fr; /* 1列にする */
+  }
+}
+
+
+
+/* ==================================== */
+/* index.css: トップページ専用スタイル */
+/* (既存のindex.css全体に加えて以下を追加/修正) */
+/* ==================================== */
+
+/* --- ヘッダー要素 (共通設定の header スタイルを拡張/上書き) --- */
+
+/* ヘッダー全体 (Flexboxのgapを共通設定より広く) */
+header.site-header {
+  display: flex;
+  align-items: center;
+  gap: 16px; 
+}
+
+/* ロゴアイコンのデザイン */
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow); /* 共通設定の影を使用 */
+}
+.logo h1 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  transform: translateY(-2px); /* わずかに上に移動して調整 */
+}
+
+/* サイトタイトル */
+.site-title {
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+/* サブタイトル */
+.site-sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* --- ヒーローセクション --- */
+.hero {
+  margin-top: 18px;
+  background: linear-gradient(180deg, #ffffff, #fffefb);
+  border-radius: var(--round);
+  padding: 26px;
+  box-shadow: var(--shadow);
+  /* 左右に分割するグリッドレイアウト */
+  display: grid;
+  grid-template-columns: 1fr 320px; 
+  gap: 20px;
+  align-items: center;
+}
+.hero .lead {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.hero .lead small {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 8px;
+}
+/* 右側のビジュアルエリア */
+.hero-visual {
+  background: linear-gradient(135deg, #fffaf6, #fff7fb);
+  border-radius: 12px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 12px;
+  color: var(--muted);
+}
+
+/* --- ボタン群 (CTA) --- */
+.cta-buttons {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ★修正点：CTAボタンのタッチ領域と文字サイズを最適化 */
+.cta-buttons a {
+    /* common.cssで定義した.btnのスタイルを継承しつつ、文字サイズを少し大きく */
+    font-size: 16px; 
+}
+
+/* プライマリボタンの色 */
+.btn-primary {
+  background: var(--leaf);
+  color: #114b2b;
+}
+/* セカンダリボタンの色 */
+.btn-secondary {
+  background: #fff;
+  color: #333;
+  border: 1px solid #f0d4db;
+}
+
+
+/* --- セクション・カード --- */
+.section {
+  margin-top: 26px;
+}
+/* カード一覧のグリッドレイアウト */
+.cards {
+  display: grid;
+  /* 最小220px、最大1frで、可能な限り列を自動調整 */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+/* indexのカードは共通設定よりパディングが狭いため上書き */
+.card {
+  padding: 14px; 
+}
+/* ★修正点：カード内の見出しの行間を確保 */
+.card h3 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4; 
+}
+/* ★修正点：カード内の段落の行間を確保 */
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* --- ステップセクション --- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列グリッド */
+  gap: 12px;
+}
+.step {
+  background: linear-gradient(180deg, #fff, #f8fff8);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.small {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* --- 成長パネル (growth) --- */
+.growth {
+  display: grid;
+  grid-template-columns: 1fr 220px; /* 広い列と狭い列に分割 */
+  gap: 12px;
+  align-items: start;
+}
+.growth .panel {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.stat {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.stat .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* --- レスポンシブ設定 (768px以下でレイアウトを調整) --- */
+@media (max-width: 880px) {
+  .hero {
+    grid-template-columns: 1fr; /* 1列にする */
+    gap: 12px;
+  }
+  .growth {
+    grid-template-columns: 1fr; /* 1列にする */
+  }
+  .steps {
+    grid-template-columns: 1fr; /* 1列にする */
+  }
+}
+
+

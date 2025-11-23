@@ -1,0 +1,265 @@
+/* ==================================== */
+/* common.css: 共通設定 (すべてのページで適用) */
+/* ==================================== */
+:root {
+  /* CSS変数：全ページで統一し、色の変更などを一箇所で行えるようにする */
+  --bg: #fffaf9;        /* メイン背景色 */
+  --card: #ffffff;      /* カード背景色 */
+  --accent: #f7c6d1;    /* 桜ピンク (強調色や境界線に使用) */
+  --leaf: #b7e4c7;      /* 若葉グリーン (ボタンなどアクション要素に使用) */
+  --muted: #6b6b6b;     /* 薄い文字色 (注釈やサブテキストに使用) */
+  --round: 12px;        /* 角丸のサイズ */
+  --maxw: 920px;        /* ページの最大幅 */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* カードの影のスタイル */
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif; /* 基本フォント設定 */
+  color: #2b2b2b;       /* 基本の文字色 */
+}
+
+/* --- 基本レイアウト --- */
+html, body {
+  height: 100%; /* bodyの高さを100%にすることで、背景グラデーションをページ全体に適用 */
+  margin: 0;
+  /* body背景にグラデーションを適用し、デザインに奥行きを出す */
+  background: linear-gradient(180deg, var(--bg), #fff);
+  -webkit-font-smoothing: antialiased; /* macOS/iOSでのフォント描画を滑らかにする */
+}
+
+/* wrap: コンテンツ全体を囲むコンテナ。中央寄せと最大幅を設定 */
+.wrap {
+  max-width: var(--maxw);
+  margin: 28px auto; /* 上下に28px、左右をautoにして中央寄せ */
+  padding: 20px;
+}
+
+/* --- テキストスタイル --- */
+p, ul {
+  line-height: 1.7; /* 行間を広げ、可読性を高める */
+}
+
+/* 見出し H1 */
+h1 {
+  margin: 12px 0 4px;
+  font-size: 24px;
+}
+/* 見出し H2: 全ページで統一の境界線付きスタイル */
+h2 {
+  margin-top: 26px;
+  font-size: 20px;
+  border-bottom: 2px solid var(--accent); /* 強調色で下線を引く */
+  padding-bottom: 4px;
+}
+/* 見出し H3 */
+h3 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* --- ヘッダー・ナビゲーション (ページ共通のヘッダー要素) --- */
+header {
+  display: flex; /* Flexboxを使って要素を横に並べる */
+  align-items: center; /* 垂直方向の中央揃え */
+  gap: 12px; /* 要素間のスペース */
+  margin-bottom: 18px;
+}
+/* 戻るリンクやパンくずリストなど */
+.back {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ==================================== */
+/* 共通パーツ (Card/Button) */
+/* ==================================== */
+/* カードの基本スタイル */
+.card {
+  background: var(--card);
+  border-radius: var(--round);
+  padding: 20px; /* 基本のパディング */
+  box-shadow: var(--shadow);
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+/* ボタンの基本スタイル */
+.btn { 
+  display: inline-block;
+  background: var(--leaf);
+  color: #2b2b2b;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+/* --- リンクのスタイル (一本化された定義) --- */
+/* 標準のリンク: 本文中のクリック可能なテキスト用 */
+/* 1. 標準リンクの定義: .wrap内のaタグに優先的に青色を適用 */
+.wrap a {
+  color: #1e88e5; /* 統一したリンク色（青）を適用 */
+  text-decoration: underline;
+}
+
+/* 2. 装飾を消したい特殊なリンク (優先度を上げるために、セレクタを詳細化) */
+/* .wrap の中であっても、ボタンやロゴのリンクは装飾を消す */
+.btn, header a, .logo a,
+.hero-visual a, .site-header a { /* index.htmlのヘッダーやロゴのリンクも確実に除外 */
+  color: inherit !important; /* 優先度を最大限に上げ、親の色を継承 */
+  text-decoration: none !important;
+}
+
+
+/* 3. リンクの基本状態（:hover, :visitedなど）は維持 */
+/* ホバー時: マウスが乗ったときのフィードバック */
+a:hover {
+  text-decoration: underline;
+}
+/* 訪問済みリンク */
+a:visited {
+  color: purple;
+}
+/* クリック中のリンク */
+a:active {
+  color: red;
+}
+/* 特定のテキストに強制的に赤を適用したい場合 */
+.red-text {
+  color: red;
+}
+
+/* ==================================== */
+/* ページ固有スタイル (他ページと共通する特殊な要素) */
+/* ==================================== */
+
+/* Story専用: 情景描写の引用ボックス */
+.scene {
+  background: #fcfcfc;
+  padding: 12px 16px;
+  border-left: 3px solid var(--accent); /* 強調色による左側のアクセントライン */
+  margin: 16px 0;
+  font-style: italic; /* 斜体 */
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* STEP専用: みおな先生のひとこと（ノート）ボックス */
+.note {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #c8e6c9; /* ライトグリーンの枠線 */
+  border-radius: var(--round);
+  background: #f7fff7; /* 非常に薄い緑の背景 */
+}
+.note strong {
+  color: #008000; /* ノート内の強調文字の色 */
+}
+
+/* Story1で画像を右に表示 (簡易的なCSS/レスポンシブ対応) */
+.story-image-right {
+  float: right; /* 画像を右に寄せる */
+  margin: 0 0 1em 1.5em; /* 下と左に余白を追加 */
+  width: 35%; 
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+/* スマートフォン対応: 画面幅が768px以下の場合 */
+@media (max-width: 768px) {
+  .story-image-right {
+    float: none; /* フロートを解除し、通常配置に戻す */
+    width: 100%; /* 幅をフルサイズにする */
+    margin: 1em 0;
+  }
+}
+
+/* --- リスクフッター専用スタイル --- */
+.risk-footer {
+  margin-top: 40px;
+  border-top: 2px solid var(--accent); /* 上部に強調色でラインを引く */
+  padding: 20px 0 0;
+}
+/* リスクフッター内のテキスト */
+.risk-footer p, .risk-footer ul {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+/* リスクフッター内の特に重要な注意書き */
+.risk-footer .important-note {
+  color: #c00000;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* --- フォーム関連スタイル (お問合せ用) --- */
+label{display:block;margin-top:12px;font-weight:600}
+input,textarea{
+  width:100%;padding:10px;margin-top:4px;border-radius:10px;
+  border:1px solid #ddd;font-size:14px;box-sizing:border-box; /* パディングやボーダーを幅に含める */
+}
+textarea{min-height:140px;resize:vertical}
+button{
+  margin-top:18px;background:var(--leaf);border:0;padding:12px 18px;
+  border-radius:12px;font-weight:700;cursor:pointer;
+}
+
+/* --- フッター (共通フッター) --- */
+footer {
+  margin-top: 30px;
+  padding: 18px 12px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+
+/* ==================================== */
+/* common.css: 全ページ共通スタイル */
+/* (既存の共通設定に加えて以下を追加/修正) */
+/* ==================================== */
+
+/* --- 見出しのモバイル調整 --- */
+@media (max-width: 600px) {
+    /* ページのメインタイトル (h1) を少し小さく */
+    h1 {
+        font-size: 24px;
+    }
+    /* セクションタイトル (h2) を少し小さく */
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* --- ボタン/リンクのタッチ領域確保 (全ページ共通) --- */
+/* .btn や主要なリンクのタッチ領域の最低推奨サイズを意識してpaddingとmin-heightを確保 */
+.btn {
+    padding: 12px 18px; 
+    min-height: 44px; /* タッチ領域の最低高さを確保 */
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2; /* ボタン内の行の高さを調整 */
+}
+
+/* --- フッターのモバイル調整 --- */
+@media (max-width: 500px) {
+    /* フッターのリンクを縦並びにして、タップミスを防ぐ */
+    footer .small {
+        display: block;
+        line-height: 1.8; /* 行間を広げて見やすく */
+    }
+    footer .small a {
+        display: block; /* 各リンクを一行全体に広げる */
+        padding: 4px 0;
+        /* セパレーターの「・」を非表示にする（任意） */
+        /* display: inline; を使って、間に区切り文字がある場合は、この修正は適用されません */
+    }
+}
+
