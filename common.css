@@ -263,3 +263,60 @@ footer {
     }
 }
 
+
+/* Story1で画像を右に表示 (簡易的なCSS/レスポンシブ対応) */
+/* ⚠️ 既存の .story-image-right の定義を全て以下の内容で置き換えてください ⚠️ */
+.story-image-right {
+    /* figure にフロートを設定 */
+    float: right; 
+    margin: 0 0 1em 1.5em; 
+    width: 35%; 
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px; /* figure 全体に角丸を適用しても良い */
+}
+
+/* スマートフォン対応: 画面幅が768px以下の場合 */
+@media (max-width: 768px) {
+    .story-image-right {
+        float: none; 
+        width: 100%; 
+        margin: 1em 0;
+    }
+}
+
+
+/* ⚠️ ご提示の「⚠️ ここから追加/修正 ⚠️」のセクション全体を、以下のコードで置き換えてください ⚠️ */
+
+/* figureの基本スタイル（既存のfigure{}の定義を上書き）*/
+figure {
+    margin: 0;
+    padding: 0;
+    /* figcaptionを下に置くために、figureに画像が持つwidthを伝える */
+    /* figure.story-image-right に float が設定される前提 */
+}
+
+/* figure内のimgは常に親要素（figure）の幅いっぱいにする */
+figure img {
+    /* imgがfloatしないように（親のfloatに任せる） */
+    float: none; 
+    /* imgのデフォルトのマージンをリセット */
+    margin: 0;
+    /* 親要素(figure)の幅いっぱいを使用 */
+    width: 100%; 
+    height: auto;
+    /* 角丸を img に設定（figureに設定しない場合） */
+    border-radius: 8px; 
+}
+
+
+/* 画像キャプションのスタイル */
+figcaption {
+    display: block; /* ブロック要素として画像を独占させる */
+    font-size: 0.9em; /* 文字を小さく */
+    color: var(--muted); /* 文字色を薄く */
+    text-align: center; /* キャプションを中央寄せ */
+    margin-top: 5px; /* 画像との間に少しスペース */
+    line-height: 1.4;
+}
+
