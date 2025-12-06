@@ -19,7 +19,12 @@
   <url><loc>https://asset-garden.pages.dev/story8.html</loc></url>
   <url><loc>https://asset-garden.pages.dev/story9.html</loc></url>    
   
-  <!-- STEP1〜STEP6 -->  
+  <!-- Column01〜02 -->  
+  <url><loc>https://asset-garden.pages.dev/column01.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/column02.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/column03.html</loc></url>  
+
+  <!-- STEP1〜6 -->  
   <url><loc>https://asset-garden.pages.dev/step1.html</loc></url>  
   <url><loc>https://asset-garden.pages.dev/step2.html</loc></url>  
   <url><loc>https://asset-garden.pages.dev/step3.html</loc></url>  
