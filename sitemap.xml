@@ -8,17 +8,17 @@
     <priority>1.0</priority>  
   </url>  
   
-  <!-- 物語 第1話〜第9話 -->  
-  <url><loc>https://asset-garden.pages.dev/story1.html</loc></url>  
-  <url><loc>https://asset-garden.pages.dev/story2.html</loc></url>  
-  <url><loc>https://asset-garden.pages.dev/story3.html</loc></url>  
-  <url><loc>https://asset-garden.pages.dev/story4.html</loc></url>  
-  <url><loc>https://asset-garden.pages.dev/story5.html</loc></url>  
-  <url><loc>https://asset-garden.pages.dev/story6.html</loc></url>  
-  <url><loc>https://asset-garden.pages.dev/story7.html</loc></url>  
-  <url><loc>https://asset-garden.pages.dev/story8.html</loc></url>
-  <url><loc>https://asset-garden.pages.dev/story9.html</loc></url>    
-  
+  <!-- 物語 第1話〜第10話 -->  
+  <url><loc>https://asset-garden.pages.dev/story01.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story02.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story03.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story04.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story05.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story06.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story07.html</loc></url>  
+  <url><loc>https://asset-garden.pages.dev/story08.html</loc></url>
+  <url><loc>https://asset-garden.pages.dev/story09.html</loc></url>    
+  <url><loc>https://asset-garden.pages.dev/story10.html</loc></url>   
   <!-- Column01〜02 -->  
   <url><loc>https://asset-garden.pages.dev/column01.html</loc></url>  
   <url><loc>https://asset-garden.pages.dev/column02.html</loc></url>  
