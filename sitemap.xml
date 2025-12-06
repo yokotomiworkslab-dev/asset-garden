@@ -68,9 +68,12 @@
       <priority>1.0</priority>
     </url>
     
-  <!-- Column01〜02 -->  
+  <!-- Column01〜03 -->  
   <url>
-    <loc>https://asset-garden.pages.dev/column01.html</loc></url>
+    <loc>https://asset-garden.pages.dev/column01.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>1.0</priority>
+  </url>
 
   <url>
     <loc>https://asset-garden.pages.dev/column02.html</loc>
