@@ -374,3 +374,36 @@ figcaption {
   display: none;  
 }
 
+/* emailを表右舷するスタイルシート */
+.email {
+    /* 背景をわずかにグレーにして本文と区別 */
+    background-color: #f8f8f8; 
+    /* 枠線を追加 */
+    border: 1px solid #ddd;
+    /* 左側の太い線（メールの視覚的な区切り） */
+    border-left: 5px solid #2a6496; 
+    /* 内側の余白 */
+    padding: 15px; 
+    /* 引用符の装飾を解除 */
+    margin: 20px 0;
+    font-style: normal;
+}
+
+.email strong {
+    /* デフォルトのstrongは黒（または元のテキスト色） */
+    color: inherit; /* 親要素の色を継承（ここでは黒に近い） */
+    font-weight: bold; 
+}
+
+/*ゆうとのメール*/
+.email .strong-highlight1 {
+    /* 最も重要な部分を青色で強調 */
+    color: #007bff; 
+    font-weight: bold;
+}
+/*みおな先生のメール*/
+.email .strong-highlight2 {
+    /* 最も重要な部分を青色で強調 */
+    color: #C71585; 
+    font-weight: bold;
+}
