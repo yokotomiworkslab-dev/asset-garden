@@ -490,7 +490,8 @@ footer {
 @media (max-width: 768px) {
     /* 1. グリッドを解除し、通常フロー（上から下）に戻す */
     .content-grid-reverse-story {
-        display: block; 
+        display: flex;
+        flex-direction: column;
     }
     
     /* 2. メインコンテンツを先に表示 */
@@ -503,7 +504,6 @@ footer {
         order: 2; 
         margin-top: 40px; /* メインコンテンツとの間隔 */
         padding: 0 10px;
-        display: block; /* 念のため display: none; を上書きし、表示を確定 */
     }
     
     /* 4. モバイルでのサイドバーのスタイル調整 */
@@ -513,17 +513,6 @@ footer {
         padding-bottom: 8px;
         margin-top: 0;
         margin-bottom: 15px;
-    }
-}
-
-
-/* =========================================
-   モバイルサイドバー表示強制 (最終対策)
-   ========================================= */
-@media (max-width: 768px) {
-    .sidebar-story-list {
-        /* display: none; を強制的に上書きし、表示を保証する */
-        display: block !important; 
     }
 }
 
