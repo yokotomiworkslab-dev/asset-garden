@@ -495,12 +495,12 @@ footer {
     
     /* 2. メインコンテンツを先に表示 */
     .main-content-right-story {
-        order: 1; 
+        order: 2; 
     }
     
     /* 3. サイドバーはメインコンテンツの下に表示し、表示を確定する */
     .sidebar-story-list {
-        order: 2; 
+        order: 1; 
         margin-top: 40px; /* メインコンテンツとの間隔 */
         padding: 0 10px;
         display: block; /* 念のため display: none; を上書きし、表示を確定 */
