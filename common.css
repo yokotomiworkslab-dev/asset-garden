@@ -488,24 +488,25 @@ footer {
 
 /* モバイル表示 (768px以下) では、サイドバーはメインコンテンツの下に全幅で表示 */
 @media (max-width: 768px) {
+    /* 1. グリッドを解除し、通常フロー（上から下）に戻す */
     .content-grid-reverse-story {
-        /* グリッドを解除し、通常フロー（上から下）に戻す */
         display: block; 
     }
     
-    /* メインコンテンツを先に表示 */
+    /* 2. メインコンテンツを先に表示 */
     .main-content-right-story {
         order: 1; 
     }
     
-    /* サイドバーはメインコンテンツの下に表示 */
+    /* 3. サイドバーはメインコンテンツの下に表示し、表示を確定する */
     .sidebar-story-list {
         order: 2; 
         margin-top: 40px; /* メインコンテンツとの間隔 */
         padding: 0 10px;
+        display: block; /* 念のため display: none; を上書きし、表示を確定 */
     }
     
-    /* モバイルでのサイドバーのスタイル調整 */
+    /* 4. モバイルでのサイドバーのスタイル調整 */
     .sidebar-title {
         font-size: 20px;
         border-bottom: 2px solid var(--muted);
@@ -513,28 +514,6 @@ footer {
         margin-top: 0;
         margin-bottom: 15px;
     }
-}
-
-
-@media (max-width: 768px) {
-    .content-grid-reverse-story {
-        /* グリッドを解除し、通常フロー（上から下）に戻す */
-        display: block; 
-    }
-    
-    /* メインコンテンツを先に表示 */
-    .main-content-right-story {
-        order: 1; 
-    }
-    
-    /* サイドバーはメインコンテンツの下に表示 */
-    .sidebar-story-list {
-        order: 2; 
-        margin-top: 40px; /* メインコンテンツとの間隔 */
-        padding: 0 10px;
-        /* ここに display: block; が自動的に適用されます */
-    }
-    /* ... 略 ... */
 }
 
 
