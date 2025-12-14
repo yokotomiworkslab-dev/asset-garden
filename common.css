@@ -514,3 +514,27 @@ footer {
         margin-bottom: 15px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .content-grid-reverse-story {
+        /* グリッドを解除し、通常フロー（上から下）に戻す */
+        display: block; 
+    }
+    
+    /* メインコンテンツを先に表示 */
+    .main-content-right-story {
+        order: 1; 
+    }
+    
+    /* サイドバーはメインコンテンツの下に表示 */
+    .sidebar-story-list {
+        order: 2; 
+        margin-top: 40px; /* メインコンテンツとの間隔 */
+        padding: 0 10px;
+        /* ここに display: block; が自動的に適用されます */
+    }
+    /* ... 略 ... */
+}
+
+
