@@ -47,7 +47,7 @@ header.site-header {
   margin-top: 18px;
   background: linear-gradient(180deg, #ffffff, #fffefb);
   border-radius: var(--round);
-  padding: 26px;
+  padding: 16px 26px;
   box-shadow: var(--shadow);
   /* 左右に分割するグリッドレイアウト */
   display: grid;
@@ -65,6 +65,8 @@ header.site-header {
   font-size: 14px;
   margin-top: 8px;
 }
+
+
 /* 右側のビジュアルエリア */
 .hero-visual {
   background: linear-gradient(135deg, #fffaf6, #fff7fb);
@@ -385,4 +387,23 @@ header.site-header {
   }
 }
 
+/* 広告カード用 */
+.ad-card {
+  padding: 8px; /* カードと馴染むように少し内側を狭める */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* 広告の高さを最大200px程度に制限 */
+.ad-card ins.adsbygoogle {
+  max-height: 200px;
+  width: 100%;
+}
+
+
+/* 広告用ラッパー */
+.ad-wrapper {
+  text-align: center;
+  margin: 24px 0; /* 上下スペース */
+}
