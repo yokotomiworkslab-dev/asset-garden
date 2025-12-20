@@ -8,7 +8,7 @@
     <priority>1.0</priority>  
   </url>  
   
-  <!-- 物語 第1話〜第18話 -->  
+  <!-- 物語 第1話〜第19話 -->  
   <url>
     <loc>https://asset-garden.pages.dev/story01.html</loc>
     <changefreq>weekly</changefreq>  
@@ -116,6 +116,11 @@
       <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://asset-garden.pages.dev/story19.html</loc>
+      <changefreq>weekly</changefreq>  
+      <priority>1.0</priority>
+  </url>
 
   <!-- Column01〜03 -->  
   <url>
