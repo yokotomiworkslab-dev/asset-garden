@@ -122,7 +122,7 @@
       <priority>1.0</priority>
   </url>
 
-  <!-- Column01〜03 -->  
+  <!-- Column01〜05 SP0405-->  
   <url>
     <loc>https://asset-garden.pages.dev/column01.html</loc>
     <changefreq>weekly</changefreq>  
@@ -140,6 +140,25 @@
     <changefreq>weekly</changefreq>  
     <priority>1.0</priority>
   </url>  
+
+    <url>
+    <loc>https://asset-garden.pages.dev/column-sp0405.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>1.0</priority>
+  </url>  
+
+  <url>
+    <loc>https://asset-garden.pages.dev/column04.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>1.0</priority>
+  </url>
+
+    <url>
+    <loc>https://asset-garden.pages.dev/column05.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>1.0</priority>
+  </url>  
+
 
   <!-- STEP1〜6 -->  
   <url>
