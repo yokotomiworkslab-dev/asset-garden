@@ -204,19 +204,30 @@
     <priority>1.0</priority>
     </url>  
   
-  <!-- その他・審査必須ページ -->  
+  <!-- その他・審査必須ページ -->
+
+  <!-- 更新履歴一覧 -->
+  <url>
+    <loc>https://asset-garden.pages.dev/update.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>1.0</priority>
+  </url>
+
+  <!-- プライバシーポリシー -->
   <url>
     <loc>https://asset-garden.pages.dev/privacy.html</loc>
     <changefreq>weekly</changefreq>  
     <priority>1.0</priority>
   </url>
 
+ <!-- 免責事項 -->
   <url>
     <loc>https://asset-garden.pages.dev/disclaimer.html</loc>
     <changefreq>weekly</changefreq>  
     <priority>1.0</priority>  
   </url>
 
+ <!-- お問い合わせフォーム -->
   <url>
     <loc>https://asset-garden.pages.dev/contact.html</loc>
     <changefreq>weekly</changefreq>  
