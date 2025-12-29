@@ -204,6 +204,7 @@
     <priority>1.0</priority>
     </url>  
   
+  
   <!-- その他・審査必須ページ -->
 
   <!-- 更新履歴一覧 -->
@@ -233,13 +234,15 @@
     <changefreq>weekly</changefreq>  
     <priority>1.0</priority>
   </url>
-  
+
+ <!-- 運営者情報とサイトの目的 -->
   <url>
     <loc>https://asset-garden.pages.dev/aboutus.html</loc>
     <changefreq>weekly</changefreq>  
     <priority>1.0</priority>
     </url>
 
+ <!-- 404 - ページが見つかりません -->
   <url>
     <loc>https://asset-garden.pages.dev/404.html</loc>
   </url>    
