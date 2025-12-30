@@ -37,12 +37,12 @@
   <meta name="twitter:description" content="ゆうとと光るタネの物語と積立投資ログを組み合わせた共有体験サイトです。">  
   <meta name="twitter:image" content="https://asset-garden.pages.dev/images/ogp.png">  
 
-
+  <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="index.css"> 
 
 </head>  
-<body>  
+<body id="top">  
 <div class="wrap" role="main">  
   
   <header class="site-header">  
@@ -53,35 +53,57 @@
     </div>  
   </header>  
   
-  <section class="hero">  
-    <div>  
-      <h2 class="lead">ようこそ、資産形成の庭へ。<br><small>ゆっくり、育てよう。あなたの未来も、この小さなタネも。</small></h2>  
-  
-      <p class="muted" style="margin-top:12px">
-        ここは、25歳のふつうの青年「ゆうと」と、小さく光るタネが一緒に育つ場所です。
-        物語と実際の積立記録をリンクさせ、やさしく資産形成を学べます。<br>
-        <strong>※ 本サイトは、積立投資の体験と記録を中心に、資産形成の学びを共有する個人運営サイトです。</strong>
-      </p>  
-  
-      <div class="cta-buttons">  
-        <a class="btn btn-primary" href="#start">はじめての方へ</a>
-        <a class="btn btn-primary" href="#update">更新履歴</a>  
-        <a class="btn btn-primary" href="#story">物語を読む</a>
-        <a class="btn btn-primary" href="#column">コラムを読む</a>  
-        <a class="btn btn-primary" href="#step">資産形成の実践STEPを読む</a>
-        <a class="btn btn-primary" href="#growth">資産の成長記録をチェック</a>  
-      </div>  
-    </div>  
-  
-      <figure>
-        <img src="images/yuuto_index.png" 
-             alt="本サイトの主人公「ゆうと」のイラスト" 
-             title="主人公ゆうと">
-        <figcaption>本サイトの主人公「ゆうと」のイラスト</figcaption>
-      </figure>
-    </section>    
+<section class="hero">
+  <figure class="hero-visual">
+    <img src="images/yuuto_index.png" alt="主人公ゆうとのイラスト" title="主人公ゆうと">
+    <figcaption>本サイトの主人公「ゆうと」のイラスト</figcaption>
+  </figure>
 
-    
+  <div class="hero-text">
+    <h2 class="lead">ようこそ、資産形成の庭へ。<br><small>ゆっくり、育てよう。あなたの未来も、この小さなタネも。</small></h2>
+    <p class="muted" style="margin-top:12px">
+      ここは、25歳のふつうの青年「ゆうと」と、小さく光るタネが一緒に育つ場所です。
+      物語と実際の積立記録をリンクさせ、やさしく資産形成を学べます。<br>
+      <strong>※ 本サイトは、積立投資の体験と記録を中心に、資産形成の学びを共有する個人運営サイトです。</strong>
+    </p>
+
+    <div class="cta-buttons">
+      <a class="btn btn-primary" href="#start">はじめての方へ</a>
+      <a class="btn btn-primary" href="#update">更新履歴</a>
+    </div>
+  </div>
+</section>
+
+<section class="top-entry">
+  <div class="card">
+    <h3>📖 物語を読む</h3>
+    <p class="muted">ゆうとと光るタネの成長物語。</p>
+    <a href="story-list.html" class="btn">物語一覧へ</a>
+  </div>
+
+  <div class="card">
+    <h3>📝 コラムで学ぶ</h3>
+    <p class="muted">初心者向けの資産形成コラム。</p>
+    <a href="column-list.html" class="btn">コラム一覧へ</a>
+  </div>
+
+  <div class="card">
+    <h3>🚶‍♂️ STEPで始める</h3>
+    <p class="muted">ゆうとと同じ手順で積立を始められます。</p>
+    <a href="step-list.html" class="btn">STEP一覧へ</a>
+  </div>
+
+  <div class="card">
+    <h3>💰 資産状況の確認</h3>
+    <p class="muted">公開中の資産を確認できます。</p>
+    <a href="#growth" class="btn btn-primary">資産の成長記録へ</a>
+  </div>
+</section>
+
+</section>
+
+  
+
   <section id="start" class="section"> 
     <h2>はじめての方へ</h2>  
     <p class="muted">  
@@ -97,10 +119,26 @@
     <section id="update" class="section"> 
     <h2>更新履歴</h2>  
     <p class="muted">  
-      令和７年１２月２９日更新：<a href="update.html">「更新履歴一覧」</a>のページを作りました。<br>
-      これまでの更新履歴が確認できます。
+      令和７年１２月３０日更新：スマートフォンで見やすいデザインに変更しました。<br>
+      更新状況の詳細は<a href="update.html">更新履歴一覧</a>より確認できます。
     </p>
     </section>  
+
+
+  <section id="latest" class="section">  
+    <h2>最新話（NEW）</h2>  
+    <article class="card" style="border-left:6px solid var(--accent);padding:18px;">  
+            <a href="story20.html" style="text-decoration: none;">
+        <h3 style="font-size:17px;margin-top:0;color:inherit;">第20話：ヒカッパと冬(前編)</h3>
+      </a>
+      <p class="small" style="margin:6px 0 12px;color:var(--muted);">  
+        元気のないヒカッパに対するゆうとの葛藤。
+      </p>  
+            <a href="story20.html" class="btn btn-primary" style="font-size:14px;padding:10px 14px;">最新話を読む</a>  
+    </article>  
+  </section>  
+
+  
 
   <section class="special">  
     <h2>日銀特集　コラム4・5｜ゆうとと日銀シリーズ</h2>  
@@ -124,127 +162,7 @@
   </section>  
 
 
-  <section id="latest" class="section">  
-    <h2>最新話（NEW）</h2>  
-    <article class="card" style="border-left:6px solid var(--accent);padding:18px;">  
-            <a href="story20.html" style="text-decoration: none;">
-        <h3 style="font-size:17px;margin-top:0;color:inherit;">第20話：ヒカッパと冬(前編)</h3>
-      </a>
-      <p class="small" style="margin:6px 0 12px;color:var(--muted);">  
-        元気のないヒカッパに対するゆうとの葛藤。
-      </p>  
-            <a href="story20.html" class="btn btn-primary" style="font-size:14px;padding:10px 14px;">最新話を読む</a>  
-    </article>  
-  </section>  
-  <section id="story" class="section">  
-    <h2>ゆうとと光るタネの物語を読む</h2>  
-    <div class="cards">  
-      <article class="card"><a href="story01.html"><h3>第1話：光るタネとの出会い</h3></a><p class="small">道ばたで見つけた光るタネ。全てはここから始まる。</p></article>  
-      <article class="card"><a href="story02.html"><h3>第2話：水耕栽培、はじまりの一滴</h3></a><p class="small">キッチンペーパーと水で始める小さな育成。</p></article>  
-      <article class="card"><a href="story03.html"><h3>第3話：根が伸びて、不安と決意</h3></a><p class="small">芽より先に根が伸びる不思議。</p></article>  
-      <article class="card"><a href="story04.html"><h3>第4話：みおな先生との出会いと命名</h3></a><p class="small">ゆうとを導く植物博士、みおなが登場。</p></article>  
-      <article class="card"><a href="story05.html"><h3>第5話：芽生えと植え替え</h3></a><p class="small">タネは芽を出し力強く成長していく。</p></article>  
-      <article class="card"><a href="story06.html"><h3>第6話：育て方と不思議なつながり</h3></a><p class="small">成長するのは植物と資産。</p></article>  
-      <article class="card"><a href="story07.html"><h3>第7話：資産形成の準備</h3></a><p class="small">楽天経済圏をフル活用。</p></article>  
-      <article class="card"><a href="story08.html"><h3>第8話：ファンドの選択と積立設定</h3></a><p class="small">ゆれる気持ちと未来への小さな一歩。</p></article>
-      <article class="card"><a href="story09.html"><h3>第9話：初めての小さな訪問者</h3></a><p class="small">小さな影と向き合う日。</p></article>  
-      <article class="card"><a href="story10.html"><h3>第10話：ゲーム機の誘惑</h3></a><p class="small">積立継続を維持する仕組み。</p></article>
-      <article class="card"><a href="story11.html"><h3>第11話：育て方の違いを知ること</h3></a><p class="small">商品も植物も特徴を正しく把握する。</p></article>
-      <article class="card"><a href="story12.html"><h3>第12話：焦りの正体</h3></a><p class="small">FOMO(機会を逃す恐怖)という影。</p></article>
-      <article class="card"><a href="story13.html"><h3>第13話：静かに根を張る日</h3></a><p class="small">変化がなくても成長している。</p></article>
-      <article class="card"><a href="story14.html"><h3>第14話：揺れる心と静かな画面</h3></a><p class="small">市場の変化に焦る気持ち。</p></article>
-      <article class="card"><a href="story15.html"><h3>第15話：習慣が人を“投資家”に変える</h3></a><p class="small">シンプルで地味な習慣</p></article>
-      <article class="card"><a href="story16.html"><h3>第16話：僕とハイリターン部門の物語</h3></a><p class="small">ファンドアワードのアンケートシリーズ①｜ハイリターンファンドの情報</p></article>
-      <article class="card"><a href="story17.html"><h3>第17話：僕とNISA積立部門の物語</h3></a><p class="small">ファンドアワードのアンケートシリーズ②｜NISA積立ファンドの情報</p></article>
-      <article class="card"><a href="story18.html"><h3>第18話：僕と新ファンド部門の物語</h3></a><p class="small">ファンドアワードのアンケートシリーズ③｜新ファンドの情報</p></article>
-      <article class="card"><a href="story19.html"><h3>第19話：育てるということ</h3></a><p class="small">植物を育てることは自分を育てること。</p></article>
-      <article class="card"><a href="story20.html"><h3>第20話：ヒカッパと冬(前編)</h3></a><p class="small">元気のないヒカッパに対するゆうとの葛藤。</p></article>
 
-             <!-- 広告カード -->
-    <article class="card ad-card">
-      <div class="ad-spacer">スポンサーリンク</div>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-2149400262363105"
-           data-ad-slot="1234567890"
-           data-ad-format="fluid"
-           data-ad-layout="in-article"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </article>
-
-
-    </div>
-  </section>
-  
-
-  <section id="column" class="section">  
-    <h2>コラムを読む</h2>
-    <p class="muted">初心者向けコラム</p>  
-    <div class="cards">  
-      <article class="card"><a href="column01.html"><h3>コラム1：NISAで大事なのは「どう使うか」です</h3></a><p class="small">初心者向け活用ガイド</p></article>  
-      <article class="card"><a href="column02.html"><h3>コラム2：iDeCoで大事なのは「どう使うか」です</h3></a><p class="small">初心者向け活用ガイド</p></article>  
-      <article class="card"><a href="column03.html"><h3>コラム3：ゆうと流 金融商品の選び方</h3></a><p class="small">ノイズを避けて前に進む！</p></article>  
-
-      <article class="card"><a href="column-sp0405.html"><h3>コラム：特設ページ「日銀特集」</h3></a><p class="small">個人投資家のための日銀との付き合い方。</p></article>  
-      <article class="card"><a href="column04.html"><h3>コラム4：ゆうとと日銀①</h3></a><p class="small">為替・株価・金利に振り回された17年</p></article>  
-      <article class="card"><a href="column05.html"><h3>コラム5：ゆうとと日銀②</h3></a><p class="small">期待はいつも現実より先に動く</p></article>  
-
-  <!-- 広告スペース -->
-      <article class="card ad-card column-ad-box">
-        <div class="ad-spacer">スポンサーリンク</div>
-        <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2149400262363105"
-         data-ad-slot="1234567890"
-         data-ad-format="fluid"
-         data-ad-layout="in-article"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </article>
-    </div>
-  </section>
-
-  <section class="section" id="step">  
-    <h2>ゆうとといっしょに積み立てを始める</h2>  
-    <p class="muted">ゆうとが実際に使っている手順です。</p>  
-  
-    <div class="steps" style="margin-top:12px">  
-  
-      <div class="step">  
-        <a href="step1.html"><h3>STEP 1：楽天銀行の口座開設</h3></a>  
-        <p class="small">最初の基盤づくり。利便性が高く、楽天証券との連携もスムーズ。</p>  
-      </div>  
-  
-      <div class="step">  
-        <a href="step2.html"><h3>STEP 2：新NISA対応！楽天証券の口座開設</h3></a>  
-        <p class="small">積立投資を始めるための証券口座。銀行との連携で手数料もお得。</p>  
-      </div>  
-  
-      <div class="step">  
-        <a href="step3.html"><h3>STEP 3：楽天カード決済で積立</h3></a>  
-        <p class="small">カード決済積立ならポイント還元が受けられることも。詳細は公式サイトへ。</p>  
-      </div>  
-  
-      <div class="step">  
-        <a href="step4.html"><h3>STEP 4：新NISA対応！積立設定のやり方</h3></a>  
-        <p class="small">ファンド選択→金額設定→支払い方法の順で進めます。</p>  
-      </div>  
-  
-      <div class="step">  
-        <a href="step5.html"><h3>STEP 5：運用成績の見方</h3></a>  
-        <p class="small">評価額・損益・資産推移のチェック方法を紹介。</p>  
-      </div>  
-  
-      <div class="step">  
-        <a href="step6.html"><h3>STEP 6：資産(相棒)が成長する体験</h3></a>  
-        <p class="small">積立が進むほど、資産も成長します。</p>  
-      </div>  
-  
-    </div>  
-  </section>  
   
   <section class="section" id="growth">  
     <h2>資産の成長記録　目標金額2,000,000円</h2>  
@@ -292,19 +210,20 @@
 <footer>  
   <div style="margin-bottom:8px">© 2025 安倍ゆうと — All rights reserved.</div>  
   
-  <div class="small" style="margin-bottom:8px">  
-    <a href="#update">更新履歴</a> ·  
-    <a href="#story">物語</a> ·  
-    <a href="#column">コラム</a> ·  
-    <a href="#step">積立のはじめ方</a> ·  
+  <div class="small" style="margin-bottom:8px">
+    <a href="#top">▲ トップへ</a>  
+    <a href="#update">更新履歴</a>
+    <a href="#story">物語</a>
+    <a href="#column">コラム</a> 
+    <a href="#step">積立のはじめ方</a>
     <a href="#growth">資産の成長記録</a>  
   </div>
   
   <div class="small" style="margin-bottom:8px">  
-    <a href="privacy.html">プライバシーポリシー</a> ·  
-    <a href="disclaimer.html">免責事項</a> ·  
-    <a href="contact.html">お問い合わせ</a> ・
-    <a href="aboutus.html">運営者情報</a>・
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="disclaimer.html">免責事項</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="aboutus.html">運営者情報</a>
     <a href="update.html">更新履歴一覧</a>
 
   </div>  

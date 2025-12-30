@@ -28,10 +28,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link rel="canonical" href="https://asset-garden.pages.dev/step6.html"/> 
 
+  <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="common.css"> 
 </head>
 
-<body>  
+<body id="top">
+
+  <input type="checkbox" id="nav-input">
+  <label for="nav-input" class="nav-open-btn"><span></span></label>
+  <label class="nav-close-layer" for="nav-input"></label>
+
+  <nav class="nav-content" aria-label="STEP一覧">
+    <h2 class="nav-list-title"><a href="step-list.html">STEP一覧</a></h2>
+    <div class="step-links-container">
+      <article class="step-link-item"><a href="step1.html">STEP1：楽天銀行の口座開設</a></article>
+      <article class="step-link-item"><a href="step2.html">STEP2：新NISA対応！楽天証券の口座開設</a></article>
+      <article class="step-link-item"><a href="step3.html">STEP3：新NISA対応！楽天カード決済の積立</a></article>
+      <article class="step-link-item"><a href="step4.html">STEP4：新NISA対応！積立設定のやり方</a></article>
+      <article class="step-link-item"><a href="step5.html">STEP5：運用状況の見方</a></article>
+      <article class="step-link-item current"><a href="step6.html">STEP6｜資産(相棒)が成長する体験</a></article>
+    </div>
+  </nav>
+
   <main class="wrap" role="main">  
     <header role="banner" aria-label="STEPヘッダー">  
       <a class="btn" href="index.html">← トップページへ戻る</a>  
@@ -98,38 +116,38 @@
     </article>
 
  <!-- 次のステップ -->  
-      <nav class="footer-nav" aria-label="STEPナビゲーション">  
-        <p>
+      <nav class="footer-nav" aria-label="ページナビゲーション" style="margin-top: 40px;">
+        <p style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
           <a class="btn" href="index.html">← トップページへ戻る</a>　
-          <a class="btn" href="step5.html">◀ STEP5</a>　
-            <a class="btn" href="#">▲ STEP6のトップ</a>
+          <a class="btn" href="step5.html">◀ STEP5</a>
+          <a class="btn" href="#top">▲ トップへ</a>
           <a class="btn" /*href="step7.html"*/>▶ STEP7制作中</a>
         </p>  
       </nav>  
 
-<div class="risk-footer">  
-  <p class="important-note">【投資に関する重要事項】</p>  
-  <p>  
-    本サイトの情報は、管理者の経験と意見に基づき提供されています。<br>  
-    <span class="red-text">**投資には元本割れ等のリスクがあり、利益を保証するものではありません。**</span>  
-  </p>  
-  <p>  
-    商品の選択や最終的な投資判断は、必ずご自身の<span class="red-text">**責任と判断**</span>で行ってください。<br>  
-    当サイトはいかなる損害も責任を負いません。  
-  </p>  
-  <p>  
-    また、本記事には楽天証券・楽天銀行・楽天カードへの<span class="red-text">**アフィリエイトリンク**</span>が含まれています。<br>  
-    正確な商品情報、最新のキャンペーン、ポイント付与条件などは、必ず各社の公式サイトをご確認ください。  
-  </p>  
-</div>  
+    <div class="risk-footer">
+      <p class="important-note">【投資に関する重要事項】</p>
+      <p>
+        本サイトの情報は、管理者の経験と意見に基づき提供されています。<br>
+        <strong class="red-text">投資には元本割れ等のリスクがあり、利益を保証するものではありません。</strong>
+      </p>
+      <p>
+        商品の選択や最終的な投資判断は、必ずご自身の<strong class="red-text">責任と判断</strong>で行ってください。<br>
+        当サイトはいかなる損害も責任を負いません。
+      </p>
+      <p>
+        また、本記事には楽天証券・楽天銀行・楽天カードへの<strong class="red-text">アフィリエイトリンク</strong>が含まれています。<br>
+        正確な商品情報、最新のキャンペーン、ポイント付与条件などは、必ず各社の公式サイトをご確認ください。
+      </p>
+    </div>
   
   <footer>
     <div style="margin-bottom:8px">© 2025 安倍ゆうと — All rights reserved.</div>
     <div class="small">
-      <a href="privacy.html">プライバシーポリシー</a> ·
-      <a href="disclaimer.html">免責事項</a> ·
-      <a href="contact.html">お問い合わせ</a>・
-      <a href="aboutus.html">運営者情報</a>・
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="disclaimer.html">免責事項</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="aboutus.html">運営者情報</a>
       <a href="update.html">更新履歴一覧</a>
     </div>
   </footer>

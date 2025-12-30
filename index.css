@@ -1,6 +1,5 @@
 /* ==================================== */
-/* index.css: トップページ専用スタイル */
-/* common.css のあとに読み込む前提 */
+/* index.css: トップページ専用スタイル（修正版） */
 /* ==================================== */
 
 /* --- ヘッダー --- */
@@ -8,6 +7,14 @@ header.site-header {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  header.site-header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .logo {
@@ -19,224 +26,233 @@ header.site-header {
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow);
+  flex-shrink: 0;
 }
 
-.logo h1 {
-  margin: 0;
-  font-size: 18px;
-  color: #fff;
-  transform: translateY(-2px);
+.logo h1 { 
+  margin: 0; 
+  font-size: 18px; 
+  color: #fff; 
+  transform: translateY(-2px); 
 }
 
-.site-title {
-  font-size: 18px;
-  margin: 0 0 4px;
+.site-title { 
+  font-size: 20px; 
+  margin: 0 0 4px; 
+  font-weight: bold; 
 }
 
-.site-sub {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
+.site-sub { 
+  margin: 0; 
+  color: var(--muted); 
+  font-size: 13px; 
 }
 
-/* --- ヒーローセクション --- */
+/* --- ヒーローセクション（文章主役・右イラスト） --- */
 .hero {
   margin-top: 18px;
   background: linear-gradient(180deg, #ffffff, #fffefb);
   border-radius: var(--round);
-  padding: 26px;
+  padding: 40px;
   box-shadow: var(--shadow);
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1; 
+  max-width: 800px;
+  min-width: 0;
+}
+
+.hero-visual {
+  flex-basis: 240px; /* 画像を大きめに */
+  flex-shrink: 0;
+  text-align: center;
 }
 
 .hero .lead {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  color: #222;
+  letter-spacing: 0.02em;
 }
 
 .hero .lead small {
   display: block;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.hero-text .muted {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #555;
+  margin-top: 20px;
+}
+
+.hero-text strong {
+  display: inline-block;
+  margin-top: 10px;
+  color: #444;
+  font-size: 0.95em;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.hero-visual figcaption {
+  font-size: 11px;
+  color: var(--muted);
   margin-top: 8px;
 }
 
-.hero figure {
-  text-align: center;
-}
+/* 📱 スマホ表示（880px以下） */
+@media (max-width: 880px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: left;
+    gap: 24px;
+  }
 
-.hero img {
-  max-width: 100%;
-  height: auto;
+  .hero-visual {
+    order: -1; /* 画像を文章の上に移動 */
+    flex-basis: auto;
+    width: 160px;
+    margin: 0 0 10px 0;
+  }
+
+  .hero .lead { font-size: 22px; }
+  .hero .lead small { font-size: 15px; }
+  .hero-text .muted { font-size: 15px; line-height: 1.7; }
 }
 
 /* --- CTAボタン --- */
 .cta-buttons {
-  margin-top: 18px;
+  margin-top: 20px;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
-.cta-buttons a {
-  font-size: 16px;
+@media (max-width: 600px) {
+  .cta-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-/* ボタン配色 */
-.btn-primary {
-  background: var(--leaf);
-  color: #114b2b;
+@media (max-width: 400px) {
+  .cta-buttons { grid-template-columns: 1fr; }
 }
 
-.btn-secondary {
-  background: #fff;
-  color: #333;
-  border: 1px solid #f0d4db;
-}
-
-.btn-third {
-  background: #eef7ff;
-  color: #245a8d;
-}
-
-.btn-forth {
-  background: #f6f6f6;
-  color: #444;
-  border: 1px solid #ddd;
-}
-
-/* --- セクション共通 --- */
-.section {
-  margin-top: 26px;
-}
-
-/* --- カード一覧 --- */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+/* --- トップページ3大入口 --- */
+.top-entry {
+  display: flex;
+  flex-direction: column;
   gap: 12px;
+  margin: 20px 0;
 }
 
-.card {
-  padding: 14px;
+.top-entry .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card h3 {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.4;
+.top-entry details {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #f9f9f9;
 }
 
-.card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.5;
+.top-entry summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  list-style: none;
 }
 
-/* --- ステップ --- */
+/* PC向け：横並び */
+@media(min-width: 768px) {
+  .top-entry {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .top-entry details {
+    flex: 1;
+    padding: 15px;
+    min-width: 0;
+    display: block; 
+  }
+}
+
+/* --- STEPカード --- */
 .steps {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 15px;
 }
 
 .step {
-  background: linear-gradient(180deg, #fff, #f8fff8);
-  border-radius: 12px;
-  padding: 12px;
+  background: #fff;
+  padding: 16px;
+  border-radius: var(--round);
+  border: 1px solid #eee;
   box-shadow: var(--shadow);
 }
 
-.small {
-  font-size: 13px;
-  color: var(--muted);
+@media(max-width:900px) {
+  .steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:600px) {
+  .steps { grid-template-columns: 1fr; }
+}
+
+/* --- カード一覧（物語・コラム） --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* スマホで一覧を畳む */
+@media(max-width:768px) {
+  #story .cards,
+  #column .cards {
+    display: none;
+  }
 }
 
 /* --- 成長記録 --- */
 .growth {
   display: grid;
-  grid-template-columns: 1fr 220px;
-  gap: 12px;
-  align-items: start;
+  grid-template-columns: minmax(280px, 1fr) 280px; /* 左右バランス調整 */
+  gap: 20px;
 }
 
-.growth .panel {
-  background: var(--card);
-  border-radius: 12px;
-  padding: 12px;
-  box-shadow: var(--shadow);
+@media(max-width:880px) {
+  .growth { grid-template-columns: 1fr; }
 }
 
-.stat {
+/* --- 広告枠 --- */
+.ad-card {
+  min-height: 180px;
   display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.stat .icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 700;
-}
-
-/* --- 広告 --- */
-.ad-wrapper {
-  text-align: center;
-  margin: 24px 0;
-}
-
-/* --- コラム4つ目の広告枠を他のカードに強制的に合わせる --- */
-
-/* 1. カード自体の高さを確保 */
-#column .column-ad-box {
-  display: flex !important;
   flex-direction: column;
-  /* 他のカードの文字数に合わせた高さ（130px〜150px程度が目安） */
-  min-height: 140px !important; 
-  background: var(--card) !important;
-  padding: 14px !important;
-  box-sizing: border-box !important;
+  justify-content: center;
+  align-items: center;
 }
-
-/* 2. 広告の上に「スポンサーリンク」などの文字を入れて高さを稼ぐ（任意） */
-.ad-spacer {
-  font-size: 11px;
-  color: var(--muted);
-  margin-bottom: 8px;
-  text-align: center;
-}
-
-/* 3. Google AdSenseの強制上書きをさらに上書き */
-#column .column-ad-box ins.adsbygoogle {
-  display: block !important;
-  min-height: 100px !important; /* 広告エリア自体の最小高さ */
-  width: 100% !important;
-}
-
-/* --- レスポンシブ --- */
-@media (max-width: 880px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .growth {
-    grid-template-columns: 1fr;
-  }
-
-  .steps {
-    grid-template-columns: 1fr;
-  }
-}
-
 

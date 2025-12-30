@@ -1,0 +1,84 @@
+/* column-list専用のカードスタイル */
+.column-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 最大4列 */
+  gap: 20px;
+  margin-top: 20px;
+  align-items: stretch;
+}
+
+/* 画面幅に応じて列数を調整 */
+@media screen and (max-width: 1200px) {
+  .column-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .column-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* コラムカード共通スタイル */
+.column-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* ホバー時 */
+.column-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* タイトル・本文・ボタン */
+.column-card h2 { font-size: 1.2em; margin-bottom: 10px; }
+.column-card p { font-size: 0.95em; margin-bottom: 10px; flex-grow: 1; }
+.column-card a.btn { display: inline-block; margin-top: 8px; }
+
+/* 広告カード */
+/* 広告カードの調整 */
+.ad-card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 上詰めに */
+  align-items: center;
+  height: 100%; /* 他のカードと揃える */
+  max-height: 300px; /* ★長くなりすぎないよう制限 */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.ad-spacer {
+  font-size: 0.75rem;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+/* 広告ユニット自体の高さを制限 */
+.ad-card ins.adsbygoogle {
+  display: block;
+  width: 100%;
+  height: 200px !important; /* ★高さを強制的に固定 */
+}
+

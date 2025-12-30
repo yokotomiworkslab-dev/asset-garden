@@ -1,0 +1,44 @@
+    /* カードを4列に並べる */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background-color: #ffffff; /* 白に変更 */
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.1em;
+    }
+
+    .card p.small {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .card.ad-card {
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* レスポンシブ対応 */
+    @media screen and (max-width: 1024px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+

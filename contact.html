@@ -17,9 +17,11 @@
     
   <meta name="description" content="資産形成の庭へのお問い合わせフォーム。サイトに関するご質問や連絡はこちらからどうぞ。">    
   <link rel="canonical" href="https://asset-garden.pages.dev/contact.html"/> 
-  <link rel="stylesheet" href="common.css">     
+
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="common.css">   
   </head>    
-<body>
+<body id="top">
     <main class="wrap" role="main">  
     <header role="banner" aria-label="共通ヘッダー">  
       <a class="btn" href="index.html">← トップページへ戻る</a>
@@ -27,7 +29,7 @@
     
   <h1>お問い合わせ</h1>    
     
-  <p class="muted">サイトに関するご質問・ご連絡はこちらからどうぞ。返信には数日かかる場合があります</p>    
+  <p class="muted">サイトに関するご質問・ご連絡はこちらからどうぞ。返信には数日かかる場合があります。</p>    
       
       <div class="card">  
         <div class="iframe-wrap"> <iframe 
@@ -75,36 +77,36 @@
       }, 3000);  
     </script>
 
-    <nav class="footer-nav" aria-label="ページナビゲーション"> 
-    <p>
-      <a class="btn" href="index.html">← トップページへ戻る</a>　
-      <a class="btn" href="#">▲ このページのトップへ戻る</a>　
+    <nav class="footer-nav" aria-label="ページナビゲーション" style="margin-top:24px">  
+    <p style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+      <a class="btn" href="index.html">← トップページへ戻る</a>
+      <a class="btn" href="#top">▲ トップへ</a>　
     </p>
     </nav>
 
-  <div class="risk-footer">  
-    <p class="important-note">【投資に関する重要事項】</p>  
-    <p>  
-      本サイトの情報は、管理者の経験と意見に基づき提供されています。<br>  
-      <span class="red-text">**投資には元本割れ等のリスクがあり、利益を保証するものではありません。**</span>  
-    </p>  
-    <p>  
-      商品の選択や最終的な投資判断は、必ずご自身の<span class="red-text">**責任と判断**</span>で行ってください。<br>  
-      当サイトはいかなる損害も責任を負いません。  
-    </p>  
-    <p>  
-      また、本記事には楽天証券・楽天銀行・楽天カードへの<span class="red-text">**アフィリエイトリンク**</span>が含まれています。<br>  
-      正確な商品情報、最新のキャンペーン、ポイント付与条件などは、必ず各社の公式サイトをご確認ください。  
-    </p>  
-  </div>  
+    <div class="risk-footer">
+      <p class="important-note">【投資に関する重要事項】</p>
+      <p>
+        本サイトの情報は、管理者の経験と意見に基づき提供されています。<br>
+        <strong class="red-text">投資には元本割れ等のリスクがあり、利益を保証するものではありません。</strong>
+      </p>
+      <p>
+        商品の選択や最終的な投資判断は、必ずご自身の<strong class="red-text">責任と判断</strong>で行ってください。<br>
+        当サイトはいかなる損害も責任を負いません。
+      </p>
+      <p>
+        また、本記事には楽天証券・楽天銀行・楽天カードへの<strong class="red-text">アフィリエイトリンク</strong>が含まれています。<br>
+        正確な商品情報、最新のキャンペーン、ポイント付与条件などは、必ず各社の公式サイトをご確認ください。
+      </p>
+    </div>
 
   <footer>
     <div style="margin-bottom:8px">© 2025 安倍ゆうと — All rights reserved.</div>
     <div class="small">
-      <a href="privacy.html">プライバシーポリシー</a> ·
-      <a href="disclaimer.html">免責事項</a> ·
-      <a href="contact.html">お問い合わせ</a>・
-      <a href="aboutus.html">運営者情報</a>・
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="disclaimer.html">免責事項</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="aboutus.html">運営者情報</a>
       <a href="update.html">更新履歴一覧</a>
     </div>
   </footer>

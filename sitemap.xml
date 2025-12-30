@@ -8,7 +8,13 @@
     <priority>1.0</priority>  
   </url>  
   
-  <!-- 物語 第1話〜第20話 -->  
+  <!-- 物語 物語一覧　第1話〜第20話 -->
+  <url>
+    <loc>https://asset-garden.pages.dev/story-list.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>0.8</priority>  
+  </url>
+
   <url>
     <loc>https://asset-garden.pages.dev/story01.html</loc>
     <changefreq>weekly</changefreq>  
@@ -129,79 +135,92 @@
   </url>
 
 
-  <!-- Column01〜05 SP0405-->  
+  <!-- コラム一覧　コラム01〜05 特設ページSP0405-->
+  <url>
+    <loc>https://asset-garden.pages.dev/column-list.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://asset-garden.pages.dev/column01.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://asset-garden.pages.dev/column02.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://asset-garden.pages.dev/column03.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>  
 
     <url>
     <loc>https://asset-garden.pages.dev/column-sp0405.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>  
 
   <url>
     <loc>https://asset-garden.pages.dev/column04.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
 
     <url>
     <loc>https://asset-garden.pages.dev/column05.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>  
 
 
-  <!-- STEP1〜6 -->  
+  <!-- STEP一覧　STEP1〜6 -->
+
+  <url>
+    <loc>https://asset-garden.pages.dev/step-list.html</loc>
+    <changefreq>weekly</changefreq>  
+    <priority>0.8</priority>
+    </url>
+
   <url>
     <loc>https://asset-garden.pages.dev/step1.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     </url>
 
   <url>
   <loc>https://asset-garden.pages.dev/step2.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://asset-garden.pages.dev/step3.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>  
 
   <url>
     <loc>https://asset-garden.pages.dev/step4.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://asset-garden.pages.dev/step5.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     </url>
 
   <url>
     <loc>https://asset-garden.pages.dev/step6.html</loc>
     <changefreq>weekly</changefreq>  
-    <priority>1.0</priority>
+    <priority>0.8</priority>
     </url>  
   
   
