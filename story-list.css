@@ -6,6 +6,11 @@
       margin: 20px 0;
     }
 
+    /* ホバー時 */
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
     .card {
       background-color: #ffffff; /* 白に変更 */
       border: 1px solid #ddd;
