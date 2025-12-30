@@ -155,48 +155,67 @@ header.site-header {
   .cta-buttons { grid-template-columns: 1fr; }
 }
 
-/* --- トップページ3大入口 --- */
+/* --- トップページ4大入口 --- */
 .top-entry {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin: 20px 0;
+  flex-direction: column; /* スマホでは縦並び */
+  gap: 16px;
+  margin: 30px 0;
 }
 
+/* カード自体の設定 */
 .top-entry .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0; /* 余計なマージンをリセット */
+  padding: 20px;
+  background: #fff;
+  border-radius: var(--round);
+  box-shadow: var(--shadow);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
 }
 
-.top-entry details {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px 12px;
-  background: #f9f9f9;
+/* ホバーで少し浮かす演出（任意） */
+.top-entry .card:hover {
+  transform: translateY(-5px);
 }
 
-.top-entry summary {
-  cursor: pointer;
-  font-weight: bold;
+.top-entry .card h3 {
+  margin: 0 0 10px 0;
   font-size: 1.1em;
-  list-style: none;
 }
 
-/* PC向け：横並び */
-@media(min-width: 768px) {
+/* PC向け：横に4枚均等に並べる */
+@media (min-width: 768px) {
   .top-entry {
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: row; /* 横並びにする */
+    align-items: stretch; /* 高さを一番高いカードに合わせる */
   }
 
-  .top-entry details {
-    flex: 1;
-    padding: 15px;
-    min-width: 0;
-    display: block; 
+  .top-entry .card {
+    flex: 1;    /* ★重要：これですべてのカードが均等な幅になります */
+    min-width: 0; /* 要素の突き抜け防止 */
   }
 }
+
+/* スマホでの微調整（2列にしたい場合はここを調整） */
+@media (max-width: 600px) {
+  .top-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* スマホで2列並びにするならこれ */
+    gap: 12px;
+  }
+}
+/* さらに小さい画面では1列に */
+@media (max-width: 400px) {
+  .top-entry {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 /* --- STEPカード --- */
 .steps {
