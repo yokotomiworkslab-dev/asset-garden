@@ -2,6 +2,14 @@
 <html lang="ja">
 <head>
 
+  <!-- Google analytics-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0GEM9FT0SF');
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GEM9FT0SF"></script>
 
@@ -10,13 +18,24 @@
 
   <!-- Google AdSense コード スニペット -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2149400262363105"
-          crossorigin="anonymous"></script>
+          crossorigin="anonymous">
+  </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "物語一覧",
+  "description": "資産形成の庭の物語シリーズ全話一覧ページ。各話にリンクしていますので、読みたい話をクリックしてください。",
+  "url": "https://asset-garden.pages.dev/story-list.html"
+}
+</script>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>物語一覧｜資産形成の庭</title>
   <link rel="canonical" href="https://asset-garden.pages.dev/story-list.html"/>
-  <meta name="description" content="ゆうとと光るタネの物語の一覧ページです。各話にリンクしていますので、読みたい話をクリックしてください。" />
+  <meta name="description" content="資産形成の庭の物語シリーズ全話一覧ページ。各話にリンクしていますので、読みたい話をクリックしてください。" />
   
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="common.css">
@@ -31,7 +50,7 @@
   <label class="nav-close-layer" for="nav-input"></label>
 
   <nav class="nav-content" aria-label="物語エピソード一覧">
-    <h2 class="nav-list-title current"><a href="story-list.html">物語エピソード一覧</a></h2>
+    <p class="nav-list-title current"><a href="story-list.html">物語エピソード一覧</a></p>
     <div class="story-links-container">
       <article class="story-link-item"><a href="story01.html">第1話：光るタネとの出会い</a></article>
       <article class="story-link-item"><a href="story02.html">第2話：水耕栽培、はじまりの一滴</a></article>
@@ -56,8 +75,8 @@
     </div>
   </nav>
 
-  <main class="wrap" role="main">
-    <header role="banner">
+  <main class="wrap">
+    <header>
       <h1>物語一覧</h1>
       <p>ゆうとと光るタネの物語。読みたい話をクリックしてください。</p>
       <a class="btn" href="index.html">← トップページへ戻る</a>
@@ -100,8 +119,8 @@
       </article>
     </section>
 
-    <nav class="footer-nav" aria-label="物語ナビゲーション" style="margin-top: 40px;">
-      <p style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <nav class="footer-nav mt-40" aria-label="物語ナビゲーション">
+      <p class="footer-nav-links">
         <a class="btn" href="index.html">← トップページへ戻る</a>
         <a class="btn" href="#top">▲ トップへ</a>
       </p>
@@ -122,10 +141,10 @@
         正確な商品情報、最新のキャンペーン、ポイント付与条件などは、必ず各社の公式サイトをご確認ください。
       </p>
     </div>
-
   </main>
     <footer>
-      <div style="margin-bottom:8px">© 2025 安倍ゆうと — All rights reserved.</div>
+      <div class="mb-8">© 2025 安倍ゆうと — All rights reserved.</div>
+      <nav>
       <div class="small">
         <a href="privacy.html">プライバシーポリシー</a>
         <a href="disclaimer.html">免責事項</a>
@@ -133,9 +152,8 @@
         <a href="aboutus.html">運営者情報</a>
         <a href="update.html">更新履歴一覧</a>
       </div>
+      </nav>
     </footer>
-
-
 </body>
 </html>
 
