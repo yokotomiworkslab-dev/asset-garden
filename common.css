@@ -272,3 +272,9 @@ footer .small a {
 .hidden {
   display: none !important;
 }
+
+
+.mt-6 { margin-top: 6px; } 
+.mb-12 { margin-bottom: 12px; } 
+.text-muted { color: var(--muted); }
+
