@@ -280,9 +280,19 @@ header.site-header {
 #story,
 #column,
 #step,
-#update{
-  scroll-margin-top: 150px;
+#update {
+  scroll-margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+  #story,
+  #column,
+  #step,
+  #update {
+    scroll-margin-top: 200px;
+  }
+}
+
 
 /* スムーズにスクロールさせる設定（お好みで） */
 html {
