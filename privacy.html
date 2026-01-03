@@ -2,14 +2,48 @@
 <html lang="ja">  
 <head>
   
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0GEM9FT0SF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0GEM9FT0SF');
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GEM9FT0SF"></script>
+
+  <!-- Google analytics-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0GEM9FT0SF');
+  </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://asset-garden.pages.dev/privacy.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://asset-garden.pages.dev/privacy.html"
+  },
+  "headline": "プライバシーポリシー",
+  "description": "『資産形成の庭』のプライバシーポリシー。当サイトの個人情報の取り扱いについて説明します。",
+  "about": {
+    "@type": "PrivacyPolicy",
+    "name": "プライバシーポリシー",
+    "url": "https://asset-garden.pages.dev/privacy.html",
+    "description": "当サイトにおける個人情報の取り扱い方針を説明します。"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "横富ワークス・ラボ",
+    "url": "https://asset-garden.pages.dev/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://asset-garden.pages.dev/images/top_index.png",
+      "width": 800,
+      "height": 800
+    }
+  }
+}
 </script>
+
 
   <meta charset="utf-8">  
   <meta name="viewport" content="width=device-width,initial-scale=1">  
@@ -23,8 +57,8 @@
 </head>  
   
 <body id="top">
-  <main class="wrap" role="main">  
-    <header role="banner" aria-label="共通ヘッダー">  
+  <main class="wrap">  
+    <header>  
       <a class="btn" href="index.html">← トップページへ戻る</a>
     </header> 
 
@@ -116,13 +150,13 @@
     <p>サイト運営者の情報については、<a href="aboutus.html">運営者情報ページ</a>をご覧ください。</p>  
   </div>  
  
-      <p style="margin-top:24px; font-size: 0.9em; color: var(--muted);">
+      <p class="policy_disclaimaer-date">
         制定日：2025年11月16日<br>
         最終改定日：2025年12月29日
       </p> 
 
-    <nav class="footer-nav" aria-label="ページナビゲーション" style="margin-top:24px">
-    <p style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <nav class="footer-nav mt-40" aria-label="ページナビゲーション">
+      <p class="footer-nav-links">
       <a class="btn" href="index.html">← トップページへ戻る</a>　
       <a class="btn" href="#top">▲ トップへ</a>
     </p>
@@ -144,18 +178,21 @@
       </p>
     </div>
 
-  <footer>
-    <div style="margin-bottom:8px">© 2025 安倍ゆうと — All rights reserved.</div>
-    <div class="small">
-      <a href="privacy.html">プライバシーポリシー</a> ·
-      <a href="disclaimer.html">免責事項</a> ·
-      <a href="contact.html">お問い合わせ</a>・
-      <a href="aboutus.html">運営者情報</a>・
-      <a href="update.html">更新履歴一覧</a>
-    </div>
-  </footer>
+</main>
 
-  </main> 
+    <footer>
+      <div class="mb-8">© 2025 安倍ゆうと — All rights reserved.</div>
+      <nav>
+      <div class="small">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="disclaimer.html">免責事項</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="aboutus.html">運営者情報</a>
+        <a href="update.html">更新履歴一覧</a>
+      </div>
+      </nav>
+    </footer>
+
 </body>  
 </html>  
 

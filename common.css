@@ -273,10 +273,11 @@ footer .small a {
   display: none !important;
 }
 
-
+/* インラインがどうたらこうたら */
 .mt-6 { margin-top: 6px; } 
 .mt-8 { margin-top: 8px; } 
 .mt-12 { margin-top: 12px; } 
+.mt-40 { margin-top: 40px; } 
 .text-muted { color: var(--muted); }
 
 
@@ -311,3 +312,34 @@ footer .small a {
   height: 12px;
 }
 
+.footer-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* コラムでサイドバーの黒中点を消す */
+.column-links-container {
+  list-style: none; 
+  padding-left: 0; 
+}
+
+/* STEPでサイドバーの黒中点を消す */
+.step-links-container {
+  list-style: none; 
+  padding-left: 0; 
+}
+
+/* 物語でサイドバーの黒中点を消す */
+.story-links-container {
+  list-style: none; 
+  padding-left: 0; 
+}
+
+/* policyとdisclaimerの日付 */
+.policy_disclaimer-date { 
+  margin-top: 24px; 
+  font-size: 0.9em; 
+  color: var(--muted); 
+}

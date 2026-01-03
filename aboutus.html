@@ -2,20 +2,67 @@
 <html lang="ja">    
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0GEM9FT0SF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0GEM9FT0SF');
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GEM9FT0SF"></script>
+
+  <!-- Google analytics-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0GEM9FT0SF');
+  </script>
+
+  <!-- Google AdSense アカウント -->
+  <meta name="google-adsense-account" content="ca-pub-2149400262363105">
+
+  <!-- Google AdSense コード スニペット -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2149400262363105"
+          crossorigin="anonymous">
+  </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://asset-garden.pages.dev/aboutus.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://asset-garden.pages.dev/aboutus.html"
+  },
+  "headline": "運営者情報とサイトの目的",
+  "description": "『資産形成の庭』の運営者情報とサイトの目的を紹介します。",
+  "author": {
+    "@type": "Person",
+    "name": "安倍ゆうと",
+    "description": "資産形成サイト『資産形成の庭』の運営者。投資歴17年。Amazon KDPで資産形成ジャンルの書籍を出版。",
+    "url": "https://asset-garden.pages.dev/aboutus.html",
+    "sameAs": [
+      "https://x.com/yuutoassetgarde"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "横富ワークス・ラボ",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://asset-garden.pages.dev/images/top_index.png",
+      "width": 800,
+      "height": 800
+    }
+  },
+  "datePublished": "2025-11-23",
+  "dateModified": "2026-01-03"
+}
 </script>
+
+
 
   <meta charset="utf-8" />    
   <meta name="viewport" content="width=device-width,initial-scale=1" />    
     
-  <title>サイト運営者情報 | 資産形成の庭</title>
-  <meta name="description" content="『資産形成の庭』のサイト運営者情報を記載します。">  
+  <title>運営者情報とサイトの目的 | 資産形成の庭</title>
+  <meta name="description" content="『資産形成の庭』の運営者情報とサイトの目的を紹介します。">  
   <link rel="canonical" href="https://asset-garden.pages.dev/aboutus.html" />    
 
   <link rel="stylesheet" href="base.css">  
@@ -25,8 +72,8 @@
 
 
 <body id="top">
-  <main class="wrap" role="main">  
-    <header role="banner" aria-label="共通ヘッダー">  
+  <main class="wrap">  
+    <header>  
       <a class="btn" href="index.html">← トップページへ戻る</a>
     </header> 
   
@@ -36,7 +83,7 @@
         <h2>1. 運営者プロフィール</h2>    
         <h3>運営者：安倍ゆうと</h3>
         <p>資産形成物語サイト「資産形成の庭」を運営しています。
-           私はこれまでに Amazon Kindle Direct Publishing (KDP)にて資産形成・投資に関する書籍を出版 しており、
+           私はこれまでに Amazon Kindle Direct Publishing (KDP)にて資産形成・投資に関する書籍を出版しており、
            初心者が無理なく資産形成を始められる方法を中心に情報を発信しています。安倍ゆうとの紹介：</p>
         <ul>  
           <li>年齢40代の男性。投資歴17年。</li>
@@ -94,7 +141,7 @@
       <h2>5. 連絡先と著作権</h2>  
         <h3>5.1. 連絡先</h3>  
         <p class="muted small">  
-            当サイトに関するご質問・ご提案・お問い合わせは、専用の <a href="contact.html">**お問い合わせフォーム**</a> よりご連絡ください。  
+            当サイトに関するご質問・ご提案・お問い合わせは、専用の <a href="contact.html"><strong>お問い合わせフォーム</strong></a> よりご連絡ください。  
         </p>  
         <h3>5.2. 著作権</h3>  
         <p>  
@@ -103,8 +150,8 @@
         </p>  
       </div>
 
-    <nav class="footer-nav" aria-label="ページナビゲーション" style="margin-top:24px">  
-      <p style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <nav class="footer-nav mt-40" aria-label="ページナビゲーション">
+      <p class="footer-nav-links">
         <a class="btn" href="index.html">← トップページへ戻る</a>
         <a class="btn" href="#top">▲ トップへ</a>
         <a class="btn" href="story-list.html">▶ 物語一覧へ</a>
@@ -113,8 +160,10 @@
       </p>
     </nav>
 
+  </main>  
+  
   <footer>    
-    <div style="margin-bottom:8px">© 2025 安倍ゆうと — All rights reserved.</div>    
+    <div class="mb-8">© 2025 安倍ゆうと — All rights reserved.</div>    
       
     <div class="small">    
       <a href="privacy.html">プライバシーポリシー</a>    
@@ -124,11 +173,13 @@
       <a href="update.html">更新履歴一覧</a>
     </div>    
       
-    <p style="color:var(--muted);font-size:12px;margin-top:10px">    
-      本サイトに掲載している文章・構成・キャラクターその他コンテンツの著作権は、作者である安倍ゆうとに帰属します。<br>  
-      ※ 当サイトはアフィリエイトプログラムを利用しています。投資はリスクを伴います。    
-    </p>    
+  <p class="mt-6 text-muted fs-11">  
+    本サイトに掲載している文章・構成・キャラクターその他コンテンツの著作権は、作者である安倍ゆうとに帰属します。<br>
+    ※ 当サイトはアフィリエイトプログラムを利用しています。投資はリスクを伴います。  
+  </p>  
+  <p class="mt-6 text-muted fs-11">著作者：安倍ゆうと</p>
+
   </footer> 
-  </main>      
+    
 </body>    
 </html>  
