@@ -310,3 +310,61 @@ html {
   clip: rect(0, 0, 0, 0); 
   border: 0; 
 }
+
+/* 成長記録ラベル */
+.growth-label {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* 成長記録の値 */
+.growth-value {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* 損益の値（緑） */
+.gain-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b8a3f;
+}
+
+/* 通常の数値 */
+.value-normal {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* 上マージン */
+.mt-12 {
+  margin-top: 12px;
+}
+
+/* パネルタイトル */
+.panel-title {
+  margin: 0 0 8px;
+}
+
+
+.no-underline { 
+  text-decoration: none; 
+}
+
+
+.flex-1 { 
+  flex: 1; 
+}
+
+/* 共通の数値表示 */
+.value-normal {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* 損益（プラス） */
+.value-gain {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b8a3f;
+}
