@@ -381,3 +381,12 @@ html {
   border-radius: 4px;
 }
 
+
+/* ヒーロービジュアル内の画像に対する設定 */
+.hero-visual img {
+  width: 100%;           /* 親要素の幅いっぱいに広がるようにする */
+  max-width: 280px;      /* ただし、最大でも280pxまでに制限する */
+  height: auto;          /* 横幅に合わせて高さは自動調整（歪みを防ぐ） */
+  display: block;        /* 画像の下にできる謎の隙間を消す */
+  margin: 0 auto;        /* PCなどで親要素が広い場合に中央に寄せる */
+}
