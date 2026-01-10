@@ -12,6 +12,10 @@
   display: block;
 }
 
+/* --- 青字・重要事項 --- */
+.blue-text { color: #1e5ae5; font-weight: bold; }
+
+
 /* --- ハンバーガーメニュー実装 (スクロール改善版) --- */
 #nav-input { display: none; }
 
