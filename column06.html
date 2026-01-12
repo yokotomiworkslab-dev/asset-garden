@@ -124,18 +124,21 @@
 
   <main class="wrap"> 
     <header>
-    <p style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a class="btn" href="/">← トップページへ戻る</a>
-      <a class="btn" href="column04.html">◀ コラム4</a>
-    </p>
+      <nav class="nav-group" aria-label="上部ナビゲーション">
+        <a class="btn" href="/">← トップページへ戻る</a>
+        <a class="btn" href="column04.html">
+          <span>◀ コラム4</span>
+          <span class="btn-sub">日銀スペシャル</span>
+        </a>
+        </nav>
     </header>  
   
     <article> 
       <h1>ゆうとと日銀②｜期待はいつも現実より先に動く</h1> 
-      <p style="text-align: center; color: #666;">※この記事は「日銀スペシャルコラム」の後編です。</p>
+      <p class="note-text">※この記事は「日銀スペシャルコラム」の後編です。</p>
 
-      <div class="note-box" style="background-color: #f9f9f9; border: 1px solid #ddd; padding: 10px; margin-bottom: 20px;">
-        <a href="column05.html" style="text-decoration: none; color: #333;">
+      <div class="note-box">
+        <a href="column05.html">
           <strong>◀ 前編を読む：</strong> ゆうとと日銀①｜為替・株価・金利に振り回された17年
         </a>
       </div>
@@ -218,9 +221,16 @@
     <nav class="footer-nav mt-40" aria-label="ページナビゲーション">
     <p style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
         <a class="btn" href="/">← トップページへ</a>
-        <a class="btn" href="column05.html">◀ コラム5</a>
+        <a class="btn" href="column05.html">
+          <span>◀ コラム5</span>
+          <span class="btn-sub">ゆうとと日銀①</span>
+
+        </a>
         <a class="btn" href="#top">▲ トップへ</a>
-        <a class="btn" /*href="column07.html"*/>▶ 制作中</a>
+        <a class="btn" style="color: #999; cursor: not-allowed; pointer-events: none;">
+          <span>▶ コラム7</span>
+          <span class="btn-sub">(制作中)</span>
+        </a>
       </p>
     </nav> 
 

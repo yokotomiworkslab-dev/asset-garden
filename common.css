@@ -173,7 +173,7 @@
   justify-content: center;
   background: var(--leaf);
   color: #2b2b2b;
-  padding: 12px 24px;
+  padding: 6px 8px;
   border-radius: 8px;
   font-weight: bold;
   transition: 0.2s;
@@ -181,6 +181,8 @@
   line-height: 1.4; /* 行間を少し広げて読みやすく */
   text-align: center; /* 中央揃え */
   text-decoration: none; /* 下線を消す */
+  width: fit-content;  /* 念のため */
+  min-height: unset;   /* 高さ固定を解除 */
 }
 
 /* サブテキスト（タイトル部分）を少し小さくする場合 */
@@ -191,6 +193,20 @@
 }
 
 .btn:hover { background: #a9d4b8; box-shadow: 0 4px 10px rgba(0, 150, 0, 0.15); }
+
+
+/* ボタンを左寄せにするためのコンテナ */
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* その中のボタンが中央寄せを継承している場合の打ち消し */
+.btn-wrap .btn {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
 
 /* --- 演出パーツ --- */
 .scene {
@@ -423,4 +439,47 @@ img {
   white-space: nowrap;
 }
 
+
+/* ボタンを囲むコンテナ用の設定 ヘッダー向け */
+.nav-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* header内なら左寄せ、footer内なら中央寄せにするために justify-content は指定せず、個別に設定するのがコツです */
+}
+
+
+
+/* ボックス自体の設定 */
+.note-box {
+  background-color: #f9f9f9 !important; /* 強制適用 */
+  border: 1px solid #ddd !important;
+  padding: 10px !important;
+  margin-bottom: 20px !important;
+  display: block; /* 横幅をいっぱい（100%）に広げる */
+  width: auto;
+}
+
+/* ボックスの中のリンク設定 */
+.note-box a:not(.btn) {
+  text-decoration: none !important; /* 下線を消す */
+  color: #333 !important;           /* 文字色を黒っぽく */
+  display: block;                  /* 枠内どこでも押せるようにする */
+  width: 100%;
+}
+
+/* ◀前編を読む： の部分 */
+.note-box strong {
+  font-weight: bold;
+}
+
+
+/* 注釈・補足用テキストの設定 */
+.note-text {
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;    /* 本文より少しだけ小さくすると「注釈感」が出て綺麗です */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
