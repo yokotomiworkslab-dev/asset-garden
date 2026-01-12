@@ -151,6 +151,7 @@
   margin-bottom: 24px;
 }
 
+/*
 .btn {
   display: inline-flex;
   align-items: center;
@@ -163,6 +164,32 @@
   transition: 0.2s;
   min-height: 44px;
 }
+*/
+
+.btn {
+  display: inline-flex;
+  flex-direction: column; /* 縦並びにする */
+  align-items: center;
+  justify-content: center;
+  background: var(--leaf);
+  color: #2b2b2b;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+  min-height: 44px;
+  line-height: 1.4; /* 行間を少し広げて読みやすく */
+  text-align: center; /* 中央揃え */
+  text-decoration: none; /* 下線を消す */
+}
+
+/* サブテキスト（タイトル部分）を少し小さくする場合 */
+.btn-sub {
+  font-size: 0.85em;
+  font-weight: normal;
+  margin-top: 4px;
+}
+
 .btn:hover { background: #a9d4b8; box-shadow: 0 4px 10px rgba(0, 150, 0, 0.15); }
 
 /* --- 演出パーツ --- */
