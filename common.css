@@ -183,6 +183,14 @@
   background: #f7fff7;
 }
 
+.learning {
+  margin: 25px 0;
+  padding: 20px;
+  border: 1px solid #f5b5c8;
+  border-radius: var(--round);
+  background: #fff5f8;
+}
+
 .email {
   background-color: #fcfcfc;
   border: 1px solid #e0e0e0;
@@ -349,3 +357,9 @@ footer .small a {
 }
 
 
+.story-image img,
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
