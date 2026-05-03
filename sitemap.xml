@@ -4,7 +4,7 @@
   <!-- トップページ -->
   <url>
     <loc>https://asset-garden.pages.dev/</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,34 +12,36 @@
   <!-- 物語一覧 -->
   <url>
     <loc>https://asset-garden.pages.dev/story-list</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 物語 第1話〜第21話 -->
-  <url><loc>https://asset-garden.pages.dev/story01</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story02</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story03</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story04</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story05</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story06</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story07</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story08</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story09</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story10</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story11</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story12</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story13</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story14</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story15</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story16</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story17</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story18</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story19</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story20</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story21</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://asset-garden.pages.dev/story22</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- 物語 第1話〜第23話 -->
+  <url><loc>https://asset-garden.pages.dev/story01</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story02</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story03</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story04</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story05</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story06</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story07</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story08</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story09</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story10</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story11</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story12</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story13</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story14</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story15</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story16</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story17</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story18</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story19</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story20</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story21</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story22</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://asset-garden.pages.dev/story23</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
 
   <!-- コラム一覧 -->
   <url>
@@ -75,7 +77,7 @@
   <url><loc>https://asset-garden.pages.dev/step6</loc><lastmod>2026-01-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- 固定ページ -->
-  <url><loc>https://asset-garden.pages.dev/update</loc><lastmod>2026-04-26</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://asset-garden.pages.dev/update</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://asset-garden.pages.dev/privacy</loc><lastmod>2026-01-11</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://asset-garden.pages.dev/disclaimer</loc><lastmod>2026-01-11</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://asset-garden.pages.dev/contact</loc><lastmod>2026-01-11</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
