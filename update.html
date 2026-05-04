@@ -90,7 +90,28 @@
   <link rel="stylesheet" href="base.css">  
   <link rel="stylesheet" href="common.css">  
 </head> 
+
 <body id="top">
+
+  <input type="checkbox" id="nav-input">
+  <label for="nav-input" class="nav-open-btn"><span></span></label>
+  <label class="nav-close-layer" for="nav-input"></label>
+
+  <nav class="nav-content" aria-label="グローバルナビゲーション">
+    <p class="nav-list-title"><a href="/">トップページ</a></p>
+    <ul class="column-links-container">
+      <li class="column-link-item"><a href="agm">AGMとは？</a></li>
+      <li class="column-link-item"><a href="story-list">物語一覧</a></li>
+      <li class="column-link-item"><a href="column-list">コラム一覧</a></li>
+      <li class="column-link-item"><a href="step-list">積立のはじめ方</a></li>
+      <li class="column-link-item"><a href="privacy">プライバシーポリシー</a></li>
+      <li class="column-link-item"><a href="disclaimer">免責事項</a></li>
+      <li class="column-link-item"><a href="contact">お問い合わせ</a></li>
+      <li class="column-link-item"><a href="aboutus">運営者情報</a></li>
+      <li class="column-link-item current"><a href="update">更新履歴一覧</a></li>
+    </ul>
+  </nav>
+
   <main class="wrap"> 
     <header>  
       <a class="btn" href="/">← トップページへ戻る</a>  
@@ -107,7 +128,8 @@
         <ol class="history-list" reversed>
           <li><strong>令和８年５月４日更新</strong><br>
             <ul class="black-dot">
-              <li>物語<a href="column08">コラム８</a>を公開しました。</li>
+              <li><a href="column08">コラム８</a>を公開しました。</li>
+              <li><a href="AGM">AGMとは？</a>を公開しました。</li>             
             </ul>
 
           <li><strong>令和８年５月３日更新</strong><br>
@@ -288,6 +310,7 @@
   <footer>
     <div class="mb-8">© 2025-2026 安倍ゆうと — All rights reserved.</div>
     <div class="small">
+      <a href="agm">AGMとは？</a>   
       <a href="privacy">プライバシーポリシー</a>
       <a href="disclaimer">免責事項</a>
       <a href="contact">お問い合わせ</a>
