@@ -483,3 +483,24 @@ img {
   margin-bottom: 10px;
 }
 
+
+/* AGM図解の外枠 */
+.agm-figure {
+    text-align: center;
+    margin: 2em auto;
+}
+
+/* 画像のレスポンシブ対応 */
+.agm-figure-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* キャプションのスタイル */
+.agm-figure-caption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5em;
+}
