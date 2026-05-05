@@ -504,3 +504,23 @@ img {
     color: #555;
     margin-top: 0.5em;
 }
+
+
+/* 英語版リンク（トップページ用） */
+.lang-switch {
+  margin: 20px 0;
+  text-align: right; /* 右寄せが自然。左寄せにしたい場合は left に変更 */
+}
+
+.lang-switch .btn.small {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  opacity: 0.9;
+}
+
+.lang-switch .btn.small:hover {
+  opacity: 1;
+}
+
+
+
