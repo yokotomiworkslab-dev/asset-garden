@@ -88,7 +88,8 @@
 
 
   <!-- 英語 -->
-  <url><loc>https://asset-garden.pages.dev/agm</loc><lastmod>2026-05-05</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://asset-garden.pages.dev/agm-en</loc><lastmod>2026-05-05</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://asset-garden.pages.dev/agm-ai-en</loc><lastmod>2026-05-05</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://asset-garden.pages.dev/contact-en</loc><lastmod>2026-05-05</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://asset-garden.pages.dev/aboutus-en</loc><lastmod>2026-05-05</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
 </urlset>
